@@ -142,7 +142,7 @@ infoPanel = $("<div class='nfe-info-panel'></div>")
     .hide()
     .appendTo(quoteDiv);
 
-quoteText = $("<p>“"+selectedQuote.quote+"”</p>")
+quoteText = $("<p>“"+selectedQuote.quote+"�?</p>")
     .addClass('nfe-quote-text')
     .appendTo(quoteDiv);
 
@@ -164,7 +164,7 @@ var extensionURL = function(relativeURL){
     }
 }
 
-fbLink = $("<a href='javascript:;'>News Feed Eradicator :)</a>")
+fbLink = $("<a href='javascript:;'>News Feed Eradicator !</a>")
     .addClass('nfe-info-link')
     .on('click', function(){
       var handleClose = function() {
