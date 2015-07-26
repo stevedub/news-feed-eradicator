@@ -129,9 +129,7 @@ var quoteList = [
     }
 ];
 
-
 var selectedQuote = quoteList[Math.floor(Math.random() * quoteList.length)];
-
 var quoteDiv, quoteText, quoteSource, fbLink, infoPanel, taikoPic;
 
 quoteDiv = $("<div class='nfe-quote'/>");
@@ -198,7 +196,6 @@ var deleteNewsfeed = function () {
     $("div#pagelet_trending_tags_and_topics").remove();
 }
 
-
 // This delay ensures that the elements have been created by Facebook's
 // scripts before we attempt to replace them
 setInterval(function () {
@@ -212,7 +209,6 @@ setInterval(function () {
         saturday: true,
         sunday: true
     }, function (items) {
-
 
         switch (new Date().getDay()) {
             case 0:

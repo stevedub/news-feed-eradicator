@@ -1,7 +1,6 @@
 // Saves options to chrome.storage
 function save_options() {
-
-  
+ 
   var monday = document.getElementById('monday').checked;
   var tuesday = document.getElementById('tuesday').checked;
   var wednesday = document.getElementById('wednesday').checked;
@@ -31,7 +30,7 @@ function save_options() {
 // Restores select box and checkbox state using the preferences
 // stored in chrome.storage.
 function restore_options() {
-  // Use default value color = 'red' and likesColor = true.
+  
   chrome.storage.sync.get({
 
     monday: monday,
@@ -42,7 +41,6 @@ function restore_options() {
     saturday: saturday,
     sunday: sunday
   }, function(items) {
-
     document.getElementById('monday').checked = items.monday;
     document.getElementById('tuesday').checked = items.tuesday;
     document.getElementById('wednesday').checked = items.wednesday;
