@@ -1,9 +1,11 @@
 {
-	"name": "News Feed Eradicator for Facebook - Stevedub",
-	"version": "0.1",
-	"description": "Find yourself spending too much time on Facebook? Eradicate distractions by replacing your entire news feed with an inspiring quote",
+	"name": "News Feed Eradicator for Facebook",
+        "options_page": "options.html",
+	"version": "1.0",
+	"description": "Find yourself spending too much time on Facebook? Eradicate distractions by replacing your entire news feed with an inspiring quote.",
 	"manifest_version": 2,
 	"permissions": [
+                "storage",
 		"http://www.facebook.com/*",
 		"https://www.facebook.com/*"
 	],
